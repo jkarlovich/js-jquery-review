@@ -8,3 +8,19 @@
 // Example Output
 
 // false
+
+function isPalindrome(string) {
+  var newString = string.toLowerCase().split('').reverse().join('');
+  console.log('string: ' + string);
+  console.log('reversed string: ' + newString);
+  if(string === newString) {
+    console.log('true');
+    return true;
+  } else {
+    console.log('false');
+    return false;
+  }
+};
+
+isPalindrome('Banana');
+isPalindrome('racecar');
